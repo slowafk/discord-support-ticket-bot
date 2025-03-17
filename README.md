@@ -137,7 +137,8 @@ sudo npm install -g pm2
 npm --version```
 
 ### START THE BOT
-```pm2 start index.js --name "ticket-bot" --time --log-date-format="YYYY-MM-DD HH:mm:ss" --max-memory-restart=300M
+```
+pm2 start index.js --name "ticket-bot" --time --log-date-format="YYYY-MM-DD HH:mm:ss" --max-memory-restart=300M
 
 # Configure PM2 to start on reboot
 pm2 startup
@@ -145,7 +146,8 @@ pm2 startup
 pm2 save
 
 # View logs
-pm2 logs ticket-bot```
+pm2 logs ticket-bot
+```
 
 ### VERIFY BOT IS WORKING
 - Check bot is online in your Discord server
