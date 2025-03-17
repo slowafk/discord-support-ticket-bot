@@ -1,5 +1,6 @@
-# discord-support-ticket-bot
-a discord support ticket bot
+# DISCORD SUPPORT TICKET BOT
+A support ticket bot for discord
+
 ## PREREQUISITES
 - AWS Account
 - Discord Developer Account (to create the bot and get tokens)
