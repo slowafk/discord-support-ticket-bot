@@ -93,7 +93,8 @@ A support ticket bot for discord
 
 ### SET UP ENVIROMENT ON EC2
 
-```sudo yum update -y
+```
+sudo yum update -y
 
 # Create project directory
 mkdir -p ~/support-ticket-bot
