@@ -28,10 +28,10 @@ const client = new Client({
 
 // Configuration - you can customize these
 const config = {
-  supportRoleId: 'YOUR_SUPPORT_ROLE_ID', // Role ID for support staff
-  ticketCategory: 'YOUR_CATEGORY_ID',    // Category ID where tickets will be created
-  ticketsLogChannel: 'YOUR_LOG_CHANNEL_ID', // Channel ID for ticket logs
-  prefix: '!', // Command prefix
+  supportRoleId: process.env.SUPPORT_ROLE_ID || '', // Role ID for support staff
+  ticketCategory: process.env.TICKET_CATEGORY_ID || '',    // Category ID where tickets will be created
+  ticketsLogChannel: process.env.TICKETS_LOG_CHANNEL_ID || '', // Channel ID for ticket logs
+  prefix: process.env.PREFIX || '!', // Command prefix
 };
 
 // Store active tickets - in production you'd use a database
