@@ -50,7 +50,8 @@ mkdir -p ~/support-ticket-bot
 cd ~/support-ticket-bot
 
 # Create directory for logs/transcripts
-mkdir -p logs transcripts```
+mkdir -p logs transcripts
+```
 
 ### CREATE AND EDIT FILES WITH NANO ###
 
