@@ -144,9 +144,9 @@ pm2 start index.js --name "ticket-bot" --time --log-date-format="YYYY-MM-DD HH:m
 pm2 startup
 # Run the command it outputs
 pm2 save
-
+```
 # View logs
-pm2 logs ticket-bot
+```pm2 logs ticket-bot
 ```
 
 ### VERIFY BOT IS WORKING
