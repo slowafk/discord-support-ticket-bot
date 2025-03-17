@@ -125,7 +125,7 @@ mkdir -p logs transcripts
 ### INSTALL DEPENDENCIES
 ```sudo yum update -y
 
-curl -sL https://rpm.nodesource.com/setup_16.x | sudo bash -
+curl -fsSL https://rpm.nodesource.com/setup_18.x | sudo bash -
 sudo yum install -y nodejs
 npm install
 
