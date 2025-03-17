@@ -6,6 +6,56 @@ A support ticket bot for discord
 - Discord Developer Account (to create the bot and get tokens)
 - PuTTY
 
+### DISCORD DEVELOPER PORTAL SETUP
+
+#### CREATE DISCORD APPLICATION
+- Go to Discord Developer Portal
+- Click "New Application" in the top right
+- Give your application a name (e.g., "Support Ticket Bot")
+- Click "Create"
+
+#### CONFIGURE BOT SETTINGS
+- In the left sidebar, click on "Bot"
+- Click "Add Bot" and confirm "Yes, do it!"
+- Under the TOKEN section, click "Reset Token" to generate a new token
+- Copy the token (you'll need this for the .env file)
+- Under "Privileged Gateway Intents", enable:
+  - SERVER MEMBERS INTENT
+  - MESSAGE CONTENT INTENT
+  - PRESENCE INTENT
+- Save Changes
+
+#### SET PERMISSIONS & CREATE INVITE LINK
+- In the left sidebar, click "OAuth2" then "URL Generator"
+- Under "SCOPES", check "bot" and "applications.commands"
+- Under "BOT PERMISSIONS", select:
+  - Manage Channels
+  - Manage Roles
+  - Read Messages/View Channels
+  - Send Messages
+  - Manage Messages
+  - Embed Links
+  - Attach Files
+  - Read Message History
+  - Add Reactions
+  - Use Slash Commands
+- Copy the generated URL at the bottom of the page
+
+#### ADD BOT TO YOUR SERVER
+- Paste the copied URL in your browser
+- Select your Discord server from the dropdown
+- Click "Continue" and "Authorize"
+- Complete the CAPTCHA if prompted
+  
+#### SET UP SERVER CHANNELS AND ROLES
+- Create a category channel (e.g., "Support Tickets")
+- Create a channel for ticket logs (e.g., #ticket-logs)
+- Create a role for support staff (e.g., "Support Team")
+- Get the IDs for these channels and roles:
+  - Enable Developer Mode in Discord (User Settings > Advanced > Developer Mode)
+  - Right-click on the channel/role and select "Copy ID"
+-These IDs will go in your .env file
+
 ### LAUNCH AN EC2 INSTANCE
 
 #### CREATE AN EC2 INSTANCE
