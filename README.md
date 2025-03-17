@@ -145,8 +145,7 @@ pm2 startup
 pm2 save
 
 # View logs
-pm2 logs ticket-bot
-```
+pm2 logs ticket-bot```
 
 ### VERIFY BOT IS WORKING
 - Check bot is online in your Discord server
