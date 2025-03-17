@@ -133,12 +133,15 @@ sudo npm install -g pm2
 ```
 
 ### VERIFY INSTALLATION
-```node --version
+```
+node --version
 npm --version
 ```
 ### START THE BOT
-```pm2 start index.js --name "ticket-bot" --time --log-date-format="YYYY-MM-DD HH:mm:ss" --max-memory-restart=300M
-
+```
+pm2 start index.js --name "ticket-bot" --time --log-date-format="YYYY-MM-DD HH:mm:ss" --max-memory-restart=300M
+```
+```
 # Configure PM2 to start on reboot
 pm2 startup
 # Run the command it outputs
